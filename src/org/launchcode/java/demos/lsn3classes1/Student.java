@@ -10,4 +10,29 @@ public class Student {
     private int numberOfCredits = 0;
     private double gpa = 0.0;
 
+    public String getName(){
+      return name;
+    }
+    public void setName(String aName){
+      name = aName;
+    }
+
+    public int getNumberOfCredits(){
+      return numberOfCredits;
+    }
+    public void setNumberOfCredits ( int aCredits){
+      numberOfCredits = aCredits;
+    }
+    public Double getGpa (){
+      return gpa;
+    }
+    public void setGpa (Double aGpa){
+      gpa = aGpa;
+    }
+
+    private String message = "What does'you should use your Student class' mean?";
+
+    void myMessage(){
+      System.out.println(message);
+    }
 }
