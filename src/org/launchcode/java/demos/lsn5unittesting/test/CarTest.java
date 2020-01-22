@@ -6,6 +6,8 @@ import org.junit.Before;
 
 import static org.junit.Assert.*;
 
+
+
 public class CarTest {    Car test_car;
     @Before
     public void createCarObject(){
@@ -31,7 +33,26 @@ public class CarTest {    Car test_car;
       assertTrue(test_car.getMake()=="Toyota");
     }
     //TODO: gasTankLevel is accurate after driving within tank range
+    @Test
+    public void testDrive(){
+      test_car.drive(50);
+      assertEquals(9, test_car.getGasTankLevel(), .001);
+    }
     //TODO: gasTankLevel is accurate after attempting to drive past tank range
+      @Test
+      public void testDistance(){
+      test_car.drive(500);
+      assertTrue(test_car.getGasTankLevel()==0);
+//      System.out.println(test_car.getMilesPerGallon());
+//      System.out.println(test_car.getGasTankLevel());
+      }
     //TODO: can't have more gas than tank size, expect an exception
+    @Test(expected = IllegalArgumentException.class)
+    public void testGasOverfillException(){
+      test_car.addGass(5);
+      fail("Shouldn't get here, car cannot have more gas in tank than the size of the tank");
+    }
+
+
 
 }
