@@ -6,6 +6,18 @@ public class Computer {
   private double ram;
   private double storage;
 
+  public Computer(String OS, double ram, double storage){
+    this.OS = OS;
+    this.ram = ram;
+    this.storage = storage;
+  }
 
+  public String computerInfo(){
+    return (this.OS + "\n" + this.ram + "\n" + this.storage);
+  }
+
+//  public String getOS(){
+//
+//  };
 
 }

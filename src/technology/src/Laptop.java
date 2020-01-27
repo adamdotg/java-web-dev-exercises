@@ -1,15 +1,19 @@
 
 
 public class Laptop extends Computer {
-
-  private String OS = "Mac OS";
-
-  public Laptop(String OS){
-    this.OS = OS;
+  public Laptop(String OS, double ram, double storage) {
+    super(OS, ram, storage);
   }
 
-  public String getOS(){
-    return OS;
-  }
+    private String name;
+    private String laptopOS = "Mac OS 10.6.6";
+
+    public String getOS(){
+      return laptopOS;
+    }
+
+    public String getInfo(){
+      return computerInfo();
+    }
 
 }
