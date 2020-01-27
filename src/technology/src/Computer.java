@@ -16,6 +16,10 @@ public class Computer {
     return (this.OS + "\n" + this.ram + "\n" + this.storage);
   }
 
+  public double valueStat(){
+    return (this.ram + this.storage / 3);
+  }
+
 //  public String getOS(){
 //
 //  };

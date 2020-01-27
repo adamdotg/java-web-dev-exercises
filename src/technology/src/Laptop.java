@@ -6,10 +6,10 @@ public class Laptop extends Computer {
   }
 
     private String name;
-    private String laptopOS = "Mac OS 10.6.6";
+    private String osVersion = "10.6.6";
 
     public String getOS(){
-      return laptopOS;
+      return osVersion;
     }
 
     public String getInfo(){
