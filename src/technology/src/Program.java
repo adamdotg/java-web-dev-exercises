@@ -1,4 +1,4 @@
-
+package technology.src;
 
 public class Program {
   public static void main(String[] args){
@@ -8,6 +8,10 @@ public class Program {
 
     System.out.println(myLaptop.getInfo());
     System.out.println(myLaptop.getOS());
+    System.out.println("---------");
+//    System.out.println(myLaptop.getVal());
+    System.out.println("Some other calculation from Laptop.java: "+myLaptop.getStats());
+    System.out.println("Same thing but from SmartPhone.java: "+myPhone.getStats());
   }
 
 
