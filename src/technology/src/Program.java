@@ -12,6 +12,7 @@ public class Program {
 //    System.out.println(myLaptop.getVal());
     System.out.println("Some other calculation from Laptop.java: "+myLaptop.getStats());
     System.out.println("Same thing but from SmartPhone.java: "+myPhone.getStats());
+    System.out.println("Static field test: "+Computer.generic);
   }
 
 

@@ -11,7 +11,7 @@ public class Computer {
     this.ram = ram;
     this.storage = storage;
   }
-  private static int generic = 10; //static field
+  public static int generic = 10; //static field
   public String computerInfo(){
     return (this.OS + "\n" + this.ram + "\n" + this.storage);
   }
