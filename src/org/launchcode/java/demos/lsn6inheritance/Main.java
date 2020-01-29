@@ -7,5 +7,8 @@ public class Main {
     garfield.eat();
     System.out.println(garfield.isTired());
     System.out.println(garfield.noise());
+    HouseCat spike = new HouseCat("Spike");
+    System.out.println(spike.getWeight());
+
   }
 }

@@ -1,7 +1,7 @@
-
+package technology.src;
 
 public class Laptop extends Computer {
-  public Laptop(String OS, double ram, double storage) {
+  public Laptop(String OS, int ram, int storage) {
     super(OS, ram, storage);
   }
 
@@ -15,5 +15,10 @@ public class Laptop extends Computer {
     public String getInfo(){
       return computerInfo();
     }
+
+    public int getStats(){
+      return valueStat();
+    }
+
 
 }

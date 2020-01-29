@@ -1,7 +1,7 @@
-
+package technology.src;
 
 public class SmartPhone extends Computer {
-  public SmartPhone(String OS, double ram, double storage){
+  public SmartPhone(String OS, int ram, int storage){
     super(OS, ram, storage);
   }
 
@@ -11,4 +11,7 @@ public class SmartPhone extends Computer {
     return OS;
   }
 
+  public int getStats(){
+    return valueStat();
+  }
 }
