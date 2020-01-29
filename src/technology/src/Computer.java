@@ -11,14 +11,14 @@ public class Computer {
     this.ram = ram;
     this.storage = storage;
   }
-  public static int generic = 10; //static field
+  public static final int GENERIC = 10; //static field and FINAL
   public String computerInfo(){
     return (this.OS + "\n" + this.ram + "\n" + this.storage);
   }
 
   public int valueStat(){
 
-    if (this.ram < generic){
+    if (this.ram < GENERIC){
       System.out.println("Ram is less than generic number:"+this.ram);
       return (this.ram);
     } else {
