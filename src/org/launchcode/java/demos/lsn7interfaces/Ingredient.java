@@ -22,7 +22,7 @@ public abstract class Ingredient {
     }
 
     public double getCost() {
-        return cost;
+      return cost;
     }
 
     public void setCost(double cost) {
